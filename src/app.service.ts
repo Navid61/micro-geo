@@ -1,8 +1,9 @@
 import { Injectable } from '@nestjs/common';
 
+
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
+  findOne(data: { user_id: string }): any {
+    return { name: 'navid', age: 40 };
   }
 }
